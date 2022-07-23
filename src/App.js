@@ -1,11 +1,8 @@
-import 'materialize-css'
+import React from 'react'
+import { MainPage } from './pages/MainPage'
 
 function App() {
-  return (
-    <div className="container">
-      <div className="menu"> asd</div>
-    </div>
-  )
+  return <MainPage />
 }
 
 export default App
