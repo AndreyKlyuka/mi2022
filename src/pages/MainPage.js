@@ -6,7 +6,6 @@ import { Menu } from '../components/Menu'
 
 export const MainPage = () => {
   const routes = useRoutes()
-  //   const [page, setPage] = useState('home')
 
   return (
     <div className="flex justify-center">

@@ -4,6 +4,10 @@ import { VotingPage } from './pages/VotingPage'
 import { BreedsPage } from './pages/BreedsPage'
 import { GalleryPage } from './pages/GalleryPage'
 
+import { LikePage } from './pages/reaction-pages/LikePage'
+import { FavouritePage } from './pages/reaction-pages/FavouritePage'
+import { DislikePage } from './pages/reaction-pages/DislikePage'
+
 export const useRoutes = () => {
   return (
     <Routes>
@@ -11,6 +15,10 @@ export const useRoutes = () => {
       <Route exact path="/voting" element={<VotingPage />} />
       <Route exact path="/breeds" element={<BreedsPage />} />
       <Route exact path="/gallery" element={<GalleryPage />} />
+
+      <Route exact path="/like" element={<LikePage />} />
+      <Route exact path="/favourite" element={<FavouritePage />} />
+      <Route exact path="/dislike" element={<DislikePage />} />
       <Route path="*" element={<Navigate replace to="/home" />} />
     </Routes>
   )

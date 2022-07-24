@@ -7,7 +7,11 @@
 :root {
   --black: #1d1d1d;
   --gray: #8c8c8c;
-  --white: #f8f8f7;
+  --white: #808080; /* f8f8f7 */
+}
+
+input {
+  all: unset;
 }
 
 html {
@@ -64,4 +68,17 @@ html {
   background-color: #ffd280;
 }
 
+/* action panel */
+.search {
+  @apply bg-white w-[470px] rounded-[20px] p-[10px] flex items-center  justify-between;
+}
+.search__button {
+  @apply w-[40px] h-[40px] flex justify-center items-center bg-[#FBE0DC] rounded-[10px];
+}
+.reaction-icons {
+  @apply bg-white hover:bg-[#FBE0DC] w-[60px] h-[60px] rounded-[20px] flex justify-center items-center;
+}
+.reaction-icons_active {
+  @apply bg-white hover:bg-[#FBE0DC] w-[60px] h-[60px] rounded-[20px] flex justify-center items-center;
+}
 /* voting page */

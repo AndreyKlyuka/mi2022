@@ -6,13 +6,13 @@ export const Card = (props) => {
     props.onClick(props.to)
   }
   return (
-    <div className={`card ${props.class}`} onClick={pageHandler}>
-      <div className="card__image ">
-        <img src={props.img} alt={`${props.to} card`} />
+    <NavLink to={`/${props.to}`}>
+      <div className={`card ${props.class}`} onClick={pageHandler}>
+        <div className="card__image ">
+          <img src={props.img} alt={`${props.to} card`} />
+        </div>
+        <div className="card__button ">{props.buttonText}</div>
       </div>
-      <div className="card__button ">
-        <NavLink to={`/${props.to}`}>{props.buttonText}</NavLink>
-      </div>
-    </div>
+    </NavLink>
   )
 }
