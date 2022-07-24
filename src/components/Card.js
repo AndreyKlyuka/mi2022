@@ -6,12 +6,12 @@ export const Card = (props) => {
     props.onClick(props.to)
   }
   return (
-    <NavLink to={`/${props.to}`}>
+    <NavLink to={`/${props.buttonText}`}>
       <div className={`card ${props.class}`} onClick={pageHandler}>
         <div className="card__image ">
           <img src={props.img} alt={`${props.to} card`} />
         </div>
-        <div className="card__button ">{props.buttonText}</div>
+        <div className="card__button ">{props.buttonText.toUpperCase()}</div>
       </div>
     </NavLink>
   )

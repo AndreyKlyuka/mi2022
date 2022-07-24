@@ -23,31 +23,28 @@ export const Menu = () => {
       <div className="flex justify-between pt-[20px]">
         <Card
           img={voteTable}
-          buttonText={'VOTING'}
+          buttonText={'voting'}
           class={
             page === 'voting' ? 'card__voting card_active' : 'card__voting'
           }
-          to={'voting'}
           page={page}
           onClick={pageHandlerCallback}
         ></Card>
         <Card
           img={petBreeds}
-          buttonText={'BREEDS'}
+          buttonText={'breeds'}
           class={
             page === 'breeds' ? 'card__breeds card_active' : 'card__breeds'
           }
-          to={'breeds'}
           page={page}
           onClick={pageHandlerCallback}
         ></Card>
         <Card
           img={imagesSearch}
-          buttonText={'GALLERY'}
+          buttonText={'gallery'}
           class={
             page === 'gallery' ? 'card__gallery card_active' : 'card__gallery'
           }
-          to={'gallery'}
           page={page}
           onClick={pageHandlerCallback}
         ></Card>

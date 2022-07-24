@@ -7,7 +7,7 @@
 :root {
   --black: #1d1d1d;
   --gray: #8c8c8c;
-  --white: #808080; /* f8f8f7 */
+  --white: #f8f8f7; /* f8f8f7 */
 }
 
 input {
@@ -56,7 +56,7 @@ html {
   @apply flex justify-center items-center rounded-[20px] border-4 border-white border-opacity-60;
 }
 .card__button {
-  @apply text-center py-[10px] rounded-[18px] bg-white tracking-[2px] text-[#FF868E];
+  @apply text-center font-medium py-[10px] rounded-[18px] bg-white tracking-[2px] text-[#FF868E];
 }
 .card__voting > .card__image {
   background-color: #b4b7ff;
@@ -81,4 +81,32 @@ html {
 .reaction-icons_active {
   @apply bg-white hover:bg-[#FBE0DC] w-[60px] h-[60px] rounded-[20px] flex justify-center items-center;
 }
+
+/* content section */
+
+.content {
+  @apply h-[782px] w-[680] mt-[10px] rounded-[20px] bg-white p-[20px];
+}
+.button-back {
+  @apply w-[40px] h-[40px] flex justify-center items-center bg-[#FBE0DC] rounded-[10px];
+}
+.current {
+  @apply w-[146px] tracking-[2px] text-[20px] font-medium text-white flex justify-center items-center bg-[#FF868E] ml-[10px] rounded-[10px];
+}
 /* voting page */
+
+.voting__image {
+  @apply w-[640px] h-[360px] mt-[20px];
+}
+
+.voting__frame {
+  @apply top-[-40px] left-[196px] flex justify-center rounded-[20px] border-4 border-white w-[248px] h-[88px];
+}
+
+.voting__icon {
+  @apply flex justify-center items-center w-[80px] h-[80px];
+}
+
+.voting__logs {
+  @apply mt-[52px];
+}
