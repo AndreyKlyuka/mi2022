@@ -15,17 +15,13 @@ html {
   font-weight: 400;
   background-color: var(--white);
 }
-
+/* menu page */
 .gray-text {
   color: var(--gray);
 }
 .black-text {
   color: var(--black);
 }
-.home {
-  background-color: #fbe0dc;
-}
-
 .bg {
   width: inherit;
   height: inherit;
@@ -37,9 +33,17 @@ html {
 .card:hover > .card__image {
   @apply border-opacity-100;
 }
-
 .card:hover > .card__button {
   @apply bg-[#FBE0DC];
+}
+.card_active > .card__image {
+  @apply border-[#FBE0DC] border-opacity-100;
+}
+.card_active > .card__button {
+  @apply bg-[#FF868E] text-white;
+}
+.card_active:hover > .card__button {
+  @apply bg-[#FF868E] text-white;
 }
 .card__image {
   height: 198px;
@@ -47,11 +51,9 @@ html {
   margin-bottom: 10px;
   @apply flex justify-center items-center rounded-[20px] border-4 border-white border-opacity-60;
 }
-
 .card__button {
   @apply text-center py-[10px] rounded-[18px] bg-white tracking-[2px] text-[#FF868E];
 }
-
 .card__voting > .card__image {
   background-color: #b4b7ff;
 }
@@ -61,3 +63,5 @@ html {
 .card__gallery > .card__image {
   background-color: #ffd280;
 }
+
+/* voting page */
