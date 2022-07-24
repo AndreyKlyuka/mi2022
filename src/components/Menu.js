@@ -16,19 +16,19 @@ export const Menu = () => {
       <div className="flex justify-between pt-[20px]">
         <div className="card card__voting ">
           <div className="card__image ">
-            <img src={voteTable} alt="" />
+            <img src={voteTable} alt="vote card" />
           </div>
           <div className="card__button ">VOTING</div>
         </div>
         <div className="card card__breeds ">
           <div className="card__image">
-            <img src={petBreeds} alt="" />
+            <img src={petBreeds} alt="breeds card" />
           </div>
           <div className="card__button ">BREEDS</div>
         </div>
         <div className="card card__gallery ">
           <div className="card__image">
-            <img src={imagesSearch} alt="" />
+            <img src={imagesSearch} alt="gallery card" />
           </div>
           <div className="card__button">GALLERY</div>
         </div>

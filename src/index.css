@@ -34,6 +34,13 @@ html {
 .card {
   @apply box-border;
 }
+.card:hover > .card__image {
+  @apply border-opacity-100;
+}
+
+.card:hover > .card__button {
+  @apply bg-[#FBE0DC];
+}
 .card__image {
   height: 198px;
   width: 138px;
