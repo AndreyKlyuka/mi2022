@@ -98,15 +98,24 @@ html {
 .voting__image {
   @apply w-[640px] h-[360px] mt-[20px];
 }
-
 .voting__frame {
-  @apply top-[-40px] left-[196px] flex justify-center rounded-[20px] border-4 border-white w-[248px] h-[88px];
+  @apply top-[-44px] left-[196px] flex justify-center rounded-[20px] border-4 border-white w-[248px] h-[88px];
 }
-
 .voting__icon {
   @apply flex justify-center items-center w-[80px] h-[80px];
 }
-
 .voting__logs {
   @apply mt-[52px];
+}
+.voting__action {
+  @apply flex flex-row py-[15px] px-[15px] bg-[#F8F8F7] rounded-[10px] mb-[10px];
+}
+.voting__time {
+  @apply w-[61px] h-[30px] bg-white rounded-[5px] flex justify-center items-center px-[10px] py-[3px];
+}
+.voting__text {
+  @apply ml-[20px] flex justify-center items-center;
+}
+.voting__reaction {
+  @apply ml-auto mr-[5px] flex justify-center items-center;
 }
