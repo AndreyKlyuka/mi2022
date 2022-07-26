@@ -11,7 +11,13 @@ export const VotingLog = (props) => {
   return (
     <div className="voting__action ">
       <div className="voting__time ">22:25</div>
-      <div className="voting__text ">{`Image ID: ${props.id} was added to ${props.reaction}`}</div>
+      <div className="voting__text ">
+        {'Image ID:'}
+        &nbsp;
+        <b>{props.id}</b>
+        &nbsp;
+        {`was ${props.action} ${props.reaction}`}
+      </div>
       <div className="voting__reaction ">
         <img src={reaction} alt="" />
       </div>

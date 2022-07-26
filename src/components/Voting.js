@@ -39,10 +39,26 @@ export const Voting = () => {
         </div>
       </div>
       <div className="voting__logs">
-        <VotingLog id={logs[0].id} reaction={logs[0].reaction} />
-        <VotingLog id={logs[1].id} reaction={logs[1].reaction} />
-        <VotingLog id={logs[2].id} reaction={logs[2].reaction} />
-        <VotingLog id={logs[0].id} reaction={logs[0].reaction} />
+        <VotingLog
+          id={logs[0].id}
+          action={'added to'}
+          reaction={logs[0].reaction}
+        />
+        <VotingLog
+          id={logs[1].id}
+          action={'added to'}
+          reaction={logs[1].reaction}
+        />
+        <VotingLog
+          id={logs[2].id}
+          action={'added to'}
+          reaction={logs[2].reaction}
+        />
+        <VotingLog
+          id={logs[0].id}
+          action={'removed from'}
+          reaction={logs[0].reaction}
+        />
       </div>
     </div>
   )
