@@ -1,25 +1,39 @@
-import React from 'react'
+import React, { useState } from 'react'
 import votingImg from '../assets/voting-image.png'
 import likeWhite from '../assets/like-white.svg'
 import favouriteWhite from '../assets/favourite-white.svg'
 import dislikeWhite from '../assets/dislike-white.svg'
 
 import { VotingLog } from './VotingLog'
-const logs = [
-  {
-    id: 'fQSunHvl8',
-    reaction: 'Like',
-  },
-  {
-    id: 'BbMFS3bU-',
-    reaction: 'Favourite',
-  },
-  {
-    id: 'HJd0XecNX ',
-    reaction: 'Dislike',
-  },
-]
+
 export const Voting = () => {
+  const [logs, setLogs] = useState([
+    {
+      id: 'fQSunHvl8',
+      reaction: 'like',
+      adding: true,
+      time: '22:22',
+    },
+    {
+      id: 'HJd0XecNX',
+      reaction: 'favourite',
+      adding: true,
+      time: '22:20',
+    },
+    {
+      id: 'BbMFS3bU-',
+      reaction: 'dislike',
+      adding: true,
+      time: '22:14',
+    },
+    {
+      id: 'BbMFS3bU-',
+      reaction: 'dislike',
+      adding: false,
+      time: '22:12',
+    },
+  ])
+
   return (
     <div>
       <div className="voting__image">
@@ -39,26 +53,17 @@ export const Voting = () => {
         </div>
       </div>
       <div className="voting__logs">
-        <VotingLog
-          id={logs[0].id}
-          action={'added to'}
-          reaction={logs[0].reaction}
-        />
-        <VotingLog
-          id={logs[1].id}
-          action={'added to'}
-          reaction={logs[1].reaction}
-        />
-        <VotingLog
-          id={logs[2].id}
-          action={'added to'}
-          reaction={logs[2].reaction}
-        />
-        <VotingLog
-          id={logs[0].id}
-          action={'removed from'}
-          reaction={logs[0].reaction}
-        />
+        {logs.map((log) => {
+          return (
+            <VotingLog
+              time={log.time}
+              id={log.id}
+              adding={log.adding}
+              reaction={log.reaction}
+              key={log.id + log.adding}
+            />
+          )
+        })}
       </div>
     </div>
   )
