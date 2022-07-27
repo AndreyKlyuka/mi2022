@@ -6,7 +6,7 @@ export const BreedsPage = () => {
   return (
     <>
       <ActionPanel />
-      <ContentSection currentPage={'breeds'} />
+      <ContentSection currentPage={'breeds'}> breeds sort</ContentSection>
     </>
   )
 }

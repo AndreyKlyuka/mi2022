@@ -6,7 +6,7 @@ export const GalleryPage = () => {
   return (
     <>
       <ActionPanel />
-      <ContentSection currentPage={'gallery'} />
+      <ContentSection currentPage={'gallery'}> gallery sort</ContentSection>
     </>
   )
 }

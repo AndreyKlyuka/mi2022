@@ -6,7 +6,7 @@ export const VotingPage = () => {
   return (
     <>
       <ActionPanel />
-      <ContentSection currentPage={'voting'} />
+      <ContentSection currentPage={'voting'}></ContentSection>
     </>
   )
 }
