@@ -119,3 +119,9 @@ html {
 .voting__reaction {
   @apply ml-auto mr-[5px] flex justify-center items-center;
 }
+
+/* breeds page*/
+
+.breeds__input {
+  @apply bg-[#F8F8F7] rounded-[10px] flex justify-center items-center;
+}

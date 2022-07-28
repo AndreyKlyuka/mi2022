@@ -11,7 +11,7 @@ export const ActionPanel = () => {
       <div className="action-panel flex justify-between">
         <div className="search ">
           <input
-            className="gray-text ml-[10px] bg-transparent w-[80%]"
+            className="gray-text text-[20px] ml-[10px] bg-transparent w-[80%] placeholder:text-[20px]"
             type="text"
             placeholder="Search for breeds by name"
           />
