@@ -123,5 +123,14 @@ html {
 /* breeds page*/
 
 .breeds__input {
-  @apply bg-[#F8F8F7] rounded-[10px] flex justify-center items-center;
+  @apply bg-[#F8F8F7] rounded-[10px] flex justify-center items-center w-[226px];
+}
+.limit__input {
+  @apply bg-[#F8F8F7] rounded-[10px] flex justify-center items-center w-[101px];
+}
+.breeds__sort {
+  @apply bg-[#F8F8F7] rounded-[10px] flex justify-center items-center w-[40px];
+}
+.rotate-arrow {
+  @apply rotate-180;
 }
