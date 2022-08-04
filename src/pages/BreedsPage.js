@@ -10,11 +10,6 @@ export const BreedsPage = () => {
   const [limitFlag, setlimitFlag] = useState(false)
 
   const dropdownHandler = (e) => {
-    // setDropdown(
-    //   e.currentTarget.className.toString().includes('breeds')
-    //     ? 'breeds'
-    //     : 'limit'
-    // )
     if (e.currentTarget.className.toString().includes('breeds')) {
       setbreedsFlag(true)
       if (breedsFlag === true) {
@@ -33,8 +28,8 @@ export const BreedsPage = () => {
   }
 
   useEffect(() => {
-    console.log(breedsFlag)
-    console.log(limitFlag, 'limit')
+    // console.log(breedsFlag)
+    // console.log(limitFlag, 'limit')
   })
 
   return (

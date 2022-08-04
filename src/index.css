@@ -120,7 +120,7 @@ html {
   @apply ml-auto mr-[5px] flex justify-center items-center;
 }
 
-/* breeds page*/
+/* breeds page */
 
 .breeds__input {
   @apply bg-[#F8F8F7] rounded-[10px] flex justify-center items-center w-[226px];
@@ -133,4 +133,17 @@ html {
 }
 .rotate-arrow {
   @apply rotate-180;
+}
+/* grid */
+.breeds__content {
+  @apply flex flex-col gap-[20px]  mt-[20px] overflow-scroll h-[750px];
+}
+.breeds__content::-webkit-scrollbar {
+  display: none;
+}
+.breeds__grid {
+  @apply grid gap-[20px] grid-cols-[200px_200px_200px] grid-rows-[140px_140px_140px];
+}
+.breeds__grid-item {
+  @apply rounded-[20px] bg-[#C4C4C4];
 }

@@ -35,7 +35,7 @@ export const Voting = () => {
   ])
 
   return (
-    <div>
+    <div className="voting__content">
       <div className="voting__image">
         <img src={votingImg} alt="cat :)" />
       </div>
